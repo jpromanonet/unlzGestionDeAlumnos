@@ -74,6 +74,7 @@ public class Login extends javax.swing.JFrame {
 
         jButton2.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/newUser.png")); // NOI18N
         jButton2.setText("NUEVO USUARIO");
+        jButton2.setToolTipText("Click para crear nuevo usuario");
 
         jLabel2.setText("CONTRASEÑA:");
 
@@ -89,6 +90,7 @@ public class Login extends javax.swing.JFrame {
 
         jButton3.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/forgotPassword.png")); // NOI18N
         jButton3.setText("OLVIDE MI CONTRASEÑA");
+        jButton3.setToolTipText("Click para recuperar tu contraseña");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);

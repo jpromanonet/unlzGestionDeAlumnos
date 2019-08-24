@@ -237,6 +237,7 @@
               <Image iconType="2" name="/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/newUser.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="NUEVO USUARIO"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click para crear nuevo usuario"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
@@ -271,6 +272,7 @@
               <Image iconType="2" name="/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/forgotPassword.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="OLVIDE MI CONTRASE&#xd1;A"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click para recuperar tu contrase&#xf1;a"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
