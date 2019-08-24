@@ -65,6 +65,7 @@ public class Login extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/login.png")); // NOI18N
         jButton1.setText("INICIAR SESIÓN");
+        jButton1.setToolTipText("Click para ingresar al sistema");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

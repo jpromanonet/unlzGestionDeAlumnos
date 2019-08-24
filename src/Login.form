@@ -225,6 +225,7 @@
               <Image iconType="2" name="/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/login.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="INICIAR SESI&#xd3;N"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click para ingresar al sistema"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
