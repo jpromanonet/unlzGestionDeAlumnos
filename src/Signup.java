@@ -8,13 +8,19 @@
  *
  * @author jpromano
  */
-public class Signup extends javax.swing.JFrame {
+import java.sqlite.*;
 
+public class Signup extends javax.swing.JFrame {
+Connection conn;
+ResultSet rs;
+PreparedStatement pst;
     /**
      * Creates new form Signup
      */
     public Signup() {
+        super("Login");
         initComponents();
+        conn=javaconnect.ConnecrDb();
     }
 
     /**
@@ -70,6 +76,11 @@ public class Signup extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/unlzGestionDeAlumnos/images/newUser.png")); // NOI18N
         jButton1.setText("CREAR USUARIO");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -184,6 +195,14 @@ public class Signup extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try{
+            String sql="Insert into Account"
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
