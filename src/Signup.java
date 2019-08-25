@@ -63,7 +63,7 @@ public class Signup extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel4.setText("Pregunta de Seguridad:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "¿Cual es el nombre de tu primer mascota?", "¿Cual es tu deporte favorito?", "¿Cual es tu gusto de helado favorito?", "¿Cual es tu lugar de nacimiento?", "¿Marca de tu primer auto?" }));
 
         jLabel5.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel5.setText("Respuesta:");
