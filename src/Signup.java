@@ -42,7 +42,7 @@ PreparedStatement pst;
         jTextField1 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -52,9 +52,9 @@ PreparedStatement pst;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "CREAR USUARIO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "CREAR USUARIO", 0, 0, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
 
-        jButton2.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/unlzGestionDeAlumnos/images/undo.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\undo.png")); // NOI18N
         jButton2.setText("VOLVER");
 
         jLabel3.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
@@ -69,12 +69,12 @@ PreparedStatement pst;
         jLabel4.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel4.setText("Pregunta de Seguridad:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "¿Cual es el nombre de tu primer mascota?", "¿Cual es tu deporte favorito?", "¿Cual es tu gusto de helado favorito?", "¿Cual es tu lugar de nacimiento?", "¿Marca de tu primer auto?" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "¿Cual es el nombre de tu primer mascota?", "¿Cual es tu deporte favorito?", "¿Cual es tu gusto de helado favorito?", "¿Cual es tu lugar de nacimiento?", "¿Marca de tu primer auto?" }));
 
         jLabel5.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel5.setText("Respuesta:");
 
-        jButton1.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/unlzGestionDeAlumnos/images/newUser.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\newUser.png")); // NOI18N
         jButton1.setText("CREAR USUARIO");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,7 +139,7 @@ PreparedStatement pst;
                 .addContainerGap())
         );
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("/media/jpromano/Dev/GIT/GitHub/facultadClasesYProyectos/Java/facultadGestionAdministracion/images/logoFacultad.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\logoFacultad.png")); // NOI18N
 
         jLabel7.setBackground(new java.awt.Color(153, 0, 51));
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
