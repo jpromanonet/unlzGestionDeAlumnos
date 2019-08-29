@@ -201,9 +201,14 @@ PreparedStatement pst;
             String sql="Insert into Account(Username,Name,Password,Seq_Q,Answer) values(?,?,?,?,?)";
             pst=conn.prepareStatement(sql);
             pst.setString(1, jTextField1.getText());
-            pst.setString(1, jTextField2.getText());
-            pst.setString(1, jTextField2.getText());
-            pst.setString(1, jTextField2.getText());
+            pst.setString(2, jTextField2.getText());
+            pst.setString(3, jTextField3.getText());
+            pst.setString(4, (String) jComboBox1.getSelectedItem());
+            pst.setString(5, jTextField4.getText());
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "New Account Created");
+            rs.close();
+            pst.close();
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
         }
