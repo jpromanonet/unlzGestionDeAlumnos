@@ -8,7 +8,7 @@
  *
  * @author jpromano
  */
-import java.sqlite.*;
+import java.sql.*;
 
 public class Signup extends javax.swing.JFrame {
 Connection conn;

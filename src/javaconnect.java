@@ -17,7 +17,7 @@ public class javaconnect {
     public static Connection ConnecrDb(){
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection conn=DriverManager.getConnection("jdbc.sqlite://media//jpromano//Dev//GIT//GitHub//unlzGestionDeAlumnos//facultadGestionAlumnos.sqlite");
+            Connection conn=DriverManager.getConnection("jdbc.sqlite:U:\\git\\unlzGestionDeAlumnos\\dataBase\\unlzGestionAlumnos.sqlite");
             return conn;
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
