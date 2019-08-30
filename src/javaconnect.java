@@ -17,9 +17,9 @@ public class javaconnect {
     public static Connection ConnecrDb(){
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection conn=DriverManager.getConnection("jdbc.sqlite:U:\\git\\unlzGestionDeAlumnos\\dataBase\\unlzGestionAlumnos.sqlite");
+            Connection conn=DriverManager.getConnection("jdbc:sqlite:U:\\git\\unlzGestionDeAlumnos\\dataBase\\unlzGestionAlumnos.sqlite");
             return conn;
-        }catch(Exception e){
+        }catch(ClassNotFoundException | SQLException e){
             JOptionPane.showMessageDialog(null, e);
             return null;
         } 
