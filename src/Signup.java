@@ -8,7 +8,9 @@
  *
  * @author jpromano
  */
+import java.awt.HeadlessException;
 import java.sql.*;
+import javax.swing.JOptionPane;
 
 public class Signup extends javax.swing.JFrame {
 Connection conn;
@@ -56,6 +58,11 @@ PreparedStatement pst;
 
         jButton2.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\undo.png")); // NOI18N
         jButton2.setText("VOLVER");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel3.setText("Contraseña:");
@@ -209,10 +216,17 @@ PreparedStatement pst;
             JOptionPane.showMessageDialog(null, "New Account Created");
             rs.close();
             pst.close();
-        }catch(Exception e){
+        }catch(SQLException | HeadlessException e){
             JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        setVisible(false);
+        Login ob=new Login();
+        ob.setVisible(true);
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
