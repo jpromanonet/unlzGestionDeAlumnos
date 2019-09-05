@@ -213,7 +213,7 @@ PreparedStatement pst;
             pst.setString(4, (String) jComboBox1.getSelectedItem());
             pst.setString(5, jTextField4.getText());
             pst.execute();
-            JOptionPane.showMessageDialog(null, "New Account Created");
+            JOptionPane.showMessageDialog(null, "Usuario dado de alta con exito!");
             rs.close();
             pst.close();
         }catch(SQLException | HeadlessException e){
