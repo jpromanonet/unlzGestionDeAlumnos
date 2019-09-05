@@ -205,7 +205,7 @@ PreparedStatement pst;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
-            String sql="Insert into Account(Username,Name,Password,Sec_Q,Answer) values(?,?,?,?,?)";
+            String sql="Insert into cuentasUsuario(nombreUsuario,nombreReal,passWord,preguntaSecreta,respuestaSecreta) values(?,?,?,?,?)";
             pst=conn.prepareStatement(sql);
             pst.setString(1, jTextField1.getText());
             pst.setString(2, jTextField2.getText());
