@@ -206,7 +206,7 @@ PreparedStatement pst;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
-            String sql="Insert into cuentasUsuario(nombreUsuario,nombreReal,passWord,preguntaSecreta,respuestaSecreta) values(?,?,?,?,?)";
+            String sql="INSERT INTO cuentasUsuario(nombreUsuario,nombreReal,passWord,preguntaSecreta,respuestaSecreta) VALUES(?,?,?,?,?)";
             pst=conn.prepareStatement(sql);
             pst.setString(1, jTextField1.getText());
             pst.setString(2, jTextField2.getText());
@@ -215,8 +215,6 @@ PreparedStatement pst;
             pst.setString(5, jTextField4.getText());
             pst.execute();
             JOptionPane.showMessageDialog(null, "Usuario dado de alta con exito!");
-            rs.close();
-            pst.close();
         }catch(SQLException | HeadlessException e){
             JOptionPane.showMessageDialog(null, e);
         }

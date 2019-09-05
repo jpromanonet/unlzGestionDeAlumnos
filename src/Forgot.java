@@ -1,7 +1,10 @@
 
+import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -27,6 +30,45 @@ PreparedStatement pst;
         conn=javaconnect.ConnecrDb();
     }
 
+    public void Buscar(){
+        String usuario=jTextField1.getText();
+        String sql="SELECT * FROM cuentasUsuario WHERE nombreUsuario='"+usuario+"'";
+        try {
+            pst=conn.prepareStatement(sql);
+            rs=pst.executeQuery();
+            if(rs.next()){
+                jTextField2.setText(rs.getString(1));
+                jTextField3.setText(rs.getString(4));
+                rs.close();
+                pst.close();
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Usuario Incorrecto");
+            }
+        } catch(HeadlessException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+    }
+    
+    public void enviar(){
+        String enviar=jTextField1.getText();
+        String respuesta=jTextField4.getText();
+        String sql="SELECT * FROM cuentasUsuario WHERE respuestaSecreta='"+respuesta+"'";
+        try{
+            pst=conn.prepareStatement(sql);
+            rs=pst.executeQuery();
+            if(rs.next()){
+                jTextField5.setText(rs.getString(3));
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "La respuesta es incorrecta, vuelva a intentarlo");
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -59,14 +101,28 @@ PreparedStatement pst;
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "Restaurar Contraseña", 0, 0, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
 
+        jTextField2.setEditable(false);
+
+        jTextField3.setEditable(false);
+
         jLabel1.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel1.setText("USUARIO:");
 
         jButton1.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\search.png")); // NOI18N
         jButton1.setText("Buscar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\Revert.png")); // NOI18N
         jButton3.setText("Cambiar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel2.setText("NOMBRE:");
@@ -78,10 +134,17 @@ PreparedStatement pst;
         jLabel4.setText("RESPUESTA:");
 
         jLabel5.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
-        jLabel5.setText("CONTRASEÑA NUEVA:");
+        jLabel5.setText("TU CONTRASEÑA:");
 
         jButton2.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\send.png")); // NOI18N
         jButton2.setText("Enviar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jTextField5.setEditable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -204,6 +267,21 @@ PreparedStatement pst;
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Buscar();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        enviar();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        setVisible (false);
+        Login ob=new Login();
+        ob.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
+ 
+    
     /**
      * @param args the command line arguments
      */
