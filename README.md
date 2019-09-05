@@ -1,7 +1,7 @@
 # unlzGestionDeAlumnos
 Sistema para gestionar legajos e inscripciones de alumnos.
 
-## Links para descargar y armar el entorno de trabajo
+## Links para descargar y armar el entorno de Desarrollo(DEV)
 
 Netbeans 11
 1. https://netbeans.apache.org/download/nb110/nb110.html
