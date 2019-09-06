@@ -3,6 +3,10 @@ Sistema para gestionar legajos e inscripciones de alumnos.
 
 ## Links para descargar y armar el entorno de Desarrollo(DEV)
 
+### Referencia youtube:
+
+https://www.youtube.com/watch?v=esIfJnbrJo8&list=PL_Ke9hJMFeR_TWfBOug40-2uSANxa8dtE
+
 Netbeans 11
 1. https://netbeans.apache.org/download/nb110/nb110.html
 
