@@ -22,6 +22,6 @@ SQLite Manager for old Firefox
 
 4. https://addons.thunderbird.net/en-us/firefox/addon/sqlite-manager/
 
-Waktime Counter
+Wakatime Counter
 
 5. https://github.com/wakatime/netbeans-wakatime/releases/tag/4.0.8
