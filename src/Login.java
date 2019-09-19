@@ -246,6 +246,7 @@ PreparedStatement pst;
              
              setVisible(false);
              Loading ob=new Loading();
+             ob.setUpLoading();
              ob.setVisible(true);
             }else{
                 JOptionPane.showMessageDialog(null, "Usuario o Contraseña incorrecta");

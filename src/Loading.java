@@ -37,10 +37,15 @@ Thread th;
                 int valueBarra=jProgressBar1.getValue();
                 if(valueBarra<maximoBarra){
                     jProgressBar1.setValue(jProgressBar1.getValue()+1);
-                }
+                }else{
+                    i=20;
+                    setVisble(false);
+                    Home ob=new Home();
+                    ob.setVisible(true);
+                }Thread.sleep(50);
             }
-        }catch(Exception, e){
-            JOptionPane.showMessageDialog(null,e);
+        }catch(InterruptedException e){
+            JOptionPane.showMessageDialog(null, e);
         }
     }
     /**
@@ -209,4 +214,8 @@ Thread th;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JProgressBar jProgressBar1;
     // End of variables declaration//GEN-END:variables
+
+    private void setVisble(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
