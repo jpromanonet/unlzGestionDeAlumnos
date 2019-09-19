@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author usuario
  */
-public class Loading extends javax.swing.JFrame {
+public class Loading extends javax.swing.JFrame implements Runnable{
 Connection conn;
 int porcentajeBarra=0;
 Thread th;
@@ -21,6 +21,7 @@ Thread th;
      */
     public Loading() {
         super("Loading");
+        initComponents();
         th=new Thread((Runnable)this);
     }
 
@@ -29,6 +30,8 @@ Thread th;
         th.start();
     }
     
+
+@Override
     public void run(){
         try{
             for(int i=1;i<=200;i++){
@@ -38,8 +41,8 @@ Thread th;
                 if(valueBarra<maximoBarra){
                     jProgressBar1.setValue(jProgressBar1.getValue()+1);
                 }else{
-                    i=20;
-                    setVisble(false);
+                    i=201;
+                    setVisible(false);
                     Home ob=new Home();
                     ob.setVisible(true);
                 }Thread.sleep(50);
@@ -167,6 +170,7 @@ Thread th;
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
