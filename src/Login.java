@@ -235,7 +235,7 @@ PreparedStatement pst;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String sql="SELECT * FROM cuentasUsuario WHERE nombreUsuario=? AND passWord=?";
+        String sql="SELECT * FROM cuentasUsuario WHERE nombreUsuario=? AND passWord=? AND activo=1";
         try{
             pst=conn.prepareStatement(sql);
             pst.setString(1, jTextField1.getText());
@@ -250,7 +250,7 @@ PreparedStatement pst;
              ob.setUpLoading();
              ob.setVisible(true);
             }else{
-                JOptionPane.showMessageDialog(null, "Usuario o Contraseña incorrecta");
+                JOptionPane.showMessageDialog(null, "Usuario o Contraseña incorrecta o usuario deshabilitado");
             }
         }catch(HeadlessException | SQLException e){
             JOptionPane.showMessageDialog(null, e);
