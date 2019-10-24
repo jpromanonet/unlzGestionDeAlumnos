@@ -25,3 +25,7 @@ SQLite Manager for old Firefox
 Wakatime Counter
 
 5. https://github.com/wakatime/netbeans-wakatime/releases/tag/4.0.8
+
+SQLite Studio
+
+6. https://sqlitestudio.pl/index.rvt
