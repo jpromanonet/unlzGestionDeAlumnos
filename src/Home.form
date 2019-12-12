@@ -291,6 +291,9 @@
               <Image iconType="2" name="C:\Users\jromano\Documents\git\unlzGestionDeAlumnos\images\inscribirMateria.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
