@@ -209,6 +209,8 @@ PreparedStatement pst;
                 .addContainerGap())
         );
 
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\logoFacultad.png")); // NOI18N
+
         jLabel7.setBackground(new java.awt.Color(153, 0, 51));
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 0, 0));
