@@ -194,7 +194,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\search.png"/>
+              <Image iconType="2" name="C:\Users\jromano\Documents\git\unlzGestionDeAlumnos\images\search.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
@@ -205,7 +205,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\Revert.png"/>
+              <Image iconType="2" name="C:\Users\jromano\Documents\git\unlzGestionDeAlumnos\images\Revert.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cambiar"/>
           </Properties>
@@ -248,7 +248,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\send.png"/>
+              <Image iconType="2" name="C:\Users\jromano\Documents\git\unlzGestionDeAlumnos\images\send.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Enviar"/>
           </Properties>
@@ -266,11 +266,6 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\logoFacultad.png"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>

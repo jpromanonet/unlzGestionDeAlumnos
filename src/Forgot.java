@@ -99,7 +99,7 @@ PreparedStatement pst;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "Restaurar Contraseña", 0, 0, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "Restaurar Contraseña", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
 
         jTextField2.setEditable(false);
 
@@ -108,7 +108,7 @@ PreparedStatement pst;
         jLabel1.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel1.setText("USUARIO:");
 
-        jButton1.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\search.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\search.png")); // NOI18N
         jButton1.setText("Buscar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +116,7 @@ PreparedStatement pst;
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\Revert.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\Revert.png")); // NOI18N
         jButton3.setText("Cambiar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +136,7 @@ PreparedStatement pst;
         jLabel5.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel5.setText("TU CONTRASEÑA:");
 
-        jButton2.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\send.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\send.png")); // NOI18N
         jButton2.setText("Enviar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,8 +208,6 @@ PreparedStatement pst;
                     .addComponent(jLabel5))
                 .addContainerGap())
         );
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\logoFacultad.png")); // NOI18N
 
         jLabel7.setBackground(new java.awt.Color(153, 0, 51));
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N

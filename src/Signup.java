@@ -54,9 +54,9 @@ PreparedStatement pst;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "CREAR USUARIO", 0, 0, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true), "CREAR USUARIO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("DejaVu Sans", 1, 24), new java.awt.Color(0, 204, 204))); // NOI18N
 
-        jButton2.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\undo.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\undo.png")); // NOI18N
         jButton2.setText("VOLVER");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +81,7 @@ PreparedStatement pst;
         jLabel5.setFont(new java.awt.Font("DejaVu Sans", 1, 14)); // NOI18N
         jLabel5.setText("Respuesta:");
 
-        jButton1.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\newUser.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\newUser.png")); // NOI18N
         jButton1.setText("CREAR USUARIO");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,8 +146,6 @@ PreparedStatement pst;
                 .addContainerGap())
         );
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\logoFacultad.png")); // NOI18N
-
         jLabel7.setBackground(new java.awt.Color(153, 0, 51));
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 0, 0));
@@ -181,7 +179,7 @@ PreparedStatement pst;
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(157, 157, 157)
                                 .addComponent(jLabel9)))))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

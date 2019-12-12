@@ -71,7 +71,7 @@ Thread th;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("U:\\git\\unlzGestionDeAlumnos\\images\\logoFacultad.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\jromano\\Documents\\git\\unlzGestionDeAlumnos\\images\\logoFacultad.png")); // NOI18N
 
         jLabel6.setBackground(new java.awt.Color(153, 0, 51));
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N

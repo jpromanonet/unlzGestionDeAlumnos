@@ -47,7 +47,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -165,7 +165,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\undo.png"/>
+              <Image iconType="2" name="C:\Users\jromano\Documents\git\unlzGestionDeAlumnos\images\undo.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="VOLVER"/>
           </Properties>
@@ -240,7 +240,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\newUser.png"/>
+              <Image iconType="2" name="C:\Users\jromano\Documents\git\unlzGestionDeAlumnos\images\newUser.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CREAR USUARIO"/>
           </Properties>
@@ -251,11 +251,6 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="U:\git\unlzGestionDeAlumnos\images\logoFacultad.png"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
