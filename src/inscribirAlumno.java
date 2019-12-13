@@ -4,6 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
+import static sun.jvm.hotspot.HelloWorld.e;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -296,12 +297,36 @@ public class inscribirAlumno extends javax.swing.JFrame {
                 jTextField10.setText(add8);
             }
         }catch(SQLException e){
-            JOptionPane.showMessageDialog(null, e);
+            JOptionPane.showMessageDialog(null, "Alumno no encontrado");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        String sql = "INSERT INTO inscripciones(materia, "
+                        + "carrera, "
+                        + "anio, "
+                        + "turno, "
+                        + "profesor, "
+                        + "alumno_dni, "
+                        + "nombre, "
+                        + "apellido) "
+                    +"VALUES (?,?,?,?,?,?,?,?)";
+        try{
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, jTextField3.getText());
+            pst.setString(2, jTextField1.getText());
+            pst.setString(3, jTextField4.getText());
+            pst.setString(4, jTextField5.getText());
+            pst.setString(5, jTextField2.getText());
+            pst.setString(6, jTextField6.getText());
+            pst.setString(7, jTextField7.getText());
+            pst.setString(8, jTextField8.getText());
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "Inscripcion realizada con exito!");
+        }catch(SQLException e){
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -313,7 +338,7 @@ public class inscribirAlumno extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String sql="SELECT * FROM nuevaMateria WHERE nombreMateria = ?";
+        String sql="SELECT * FROM nuevaMateria WHERE nombreMateria LIKE ?";
         try{
             pst=conn.prepareStatement(sql);
             pst.setString(1, jTextField3.getText());
@@ -329,8 +354,8 @@ public class inscribirAlumno extends javax.swing.JFrame {
                 jTextField2.setText(add4);
             }
         }catch(SQLException e){
-            JOptionPane.showMessageDialog(null, e);
-        }
+            JOptionPane.showMessageDialog(null, "Materia no encontrada");
+        }      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
